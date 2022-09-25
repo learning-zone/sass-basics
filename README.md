@@ -1,5 +1,7 @@
 # SCSS Interview Questions
 
+*Click <img src="assets/star.png" width="18" height="18" align="absmiddle" title="Star" /> if you like the project. Pull Request are highly appreciated.*
+
 <br/>
 
 ## Q. What is Sass?
@@ -9,7 +11,7 @@ When stylesheets are getting larger, more complex, and harder to maintain. This 
 Sass works by writing your styles in .scss (or .sass) files, which will then get compiled into a regular CSS file. The newly compiled CSS file is what gets loaded to your browser to style your web application. This allows the browser to properly apply the styles to your web page.
 
 <p align="center">
-  <img src="assets/images/sass-process.png" alt="Sass Process" width="300px;" />
+  <img src="assets/sass-process.png" alt="Sass Process" width="300px;" />
 </p>
 
 **Live Demo**: [Sass Example](https://codepen.io/learning-zone/pen/RwVprvO)

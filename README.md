@@ -278,12 +278,6 @@ aside[role="complementary"] {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. List out the data types that Sass supports?
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. Explain the @include, @mixin, @function functions and how they are used. What is %placeholder?
 
 i) ```@mixin``` A mixin lets you make groups of CSS declarations that you want to reuse throughout your site
@@ -412,6 +406,7 @@ File splitting helps organize your CSS into multiple files, decreasing page load
 #### Q. Which directive displays an error message in SASS?
 #### Q. How many output styles are there in sass?
 #### Q. Which symbol is used to refer parent selector in sass?
+## Q. List out the data types that Sass supports?
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>

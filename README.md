@@ -14,7 +14,7 @@ Sass works by writing your styles in .scss (or .sass) files, which will then get
   <img src="assets/sass-process.png" alt="Sass Process" width="300px;" />
 </p>
 
-**Live Demo**: [Sass Example](https://codepen.io/learning-zone/pen/RwVprvO)
+**&#9885; [Try this example on CodeSandbox](https://codepen.io/learning-zone/pen/RwVprvO)**
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -49,7 +49,7 @@ body {
 
 When the Sass is processed, it takes the variables we define for the `$font-stack` and `$primary-color` and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.
 
-**Live Demo**: [Sass Variables](https://codepen.io/learning-zone/pen/LYyWNGM)
+**&#9885; [Try this example on CodeSandbox](https://codepen.io/learning-zone/pen/LYyWNGM)**
 
 **2. Nesting:**
 
@@ -93,11 +93,13 @@ nav a {
 }
 ```
 
-**Live Demo**: [Sass Nesting](https://codepen.io/learning-zone/pen/qBmrZmv)
+**&#9885; [Try this example on CodeSandbox](https://codepen.io/learning-zone/pen/qBmrZmv)**
 
 **3. Partials:**
 
-The partial Sass files contain little snippets of CSS that can be included in other Sass files. This is a great way to modularize your CSS and help keep things easier to maintain. A partial is a Sass file named with a leading underscore. You might name it something like `_partial.scss`. The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. Sass partials are used with the `@use` rule.
+The partial Sass files contain little snippets of CSS that can be included in other Sass files. This is a great way to modularize your CSS and help keep things easier to maintain. A partial is a Sass file named with a leading underscore. You might name it something like `_partial.scss`.
+
+The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. Sass partials are used with the `@use` rule.
 
 **4. Modules:**
 
@@ -165,7 +167,7 @@ A mixin provide to make groups of CSS declarations that you want to reuse throug
 }
 ```
 
-**Live Demo**: [Sass Mixins](https://codepen.io/learning-zone/pen/xxdqVPM)
+**&#9885; [Try this example on CodeSandbox](https://codepen.io/learning-zone/pen/xxdqVPM)**
 
 **6. Inheritance:**
 
@@ -230,7 +232,7 @@ Using `@extend` lets you share a set of CSS properties from one selector to anot
 }
 ```
 
-**Live Demo**: [Sass Inheritance](https://codepen.io/learning-zone/pen/ExmWKLG)
+**&#9885; [Try this example on CodeSandbox](https://codepen.io/learning-zone/pen/ExmWKLG)**
 
 **7. Operators:**
 
@@ -315,7 +317,7 @@ ii) ```@extend``` directive provides a simple way to allow a selector to inherit
 }
 ```
 
-iii) ```%placeholder``` are classes that aren’t output when your SCSS is compiled
+iii) ```%placeholder``` are classes that aren\'t output when your SCSS is compiled
 
 ```scss
 %awesome {
@@ -360,7 +362,7 @@ body, p {
 * Saas allows you to write reusable methods and use logic statements, e., loops, and conditionals
 * Saas user can access Compass library and use some awesome features like dynamic sprite map generation, legacy browser hacks * and cross-browser support for CSS3 features
 * Compass also allows you to add an external framework like Blueprint, Foundation or Bootstrap on top
-* In LESS, you can write a basic logic statement using a ‘guarded mixin’, which is equivalent to Sass if statements
+* In LESS, you can write a basic logic statement using a "guarded mixin", which is equivalent to Sass if statements
 * In LESS, you can loop through numeric values using recursive functions while Sass allows you to iterate any kind of data
 * In Sass, you can write your own handy functions
 
@@ -406,7 +408,7 @@ File splitting helps organize your CSS into multiple files, decreasing page load
 #### Q. Which directive displays an error message in SASS?
 #### Q. How many output styles are there in sass?
 #### Q. Which symbol is used to refer parent selector in sass?
-## Q. List out the data types that Sass supports?
+#### Q. List out the data types that Sass supports?
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>

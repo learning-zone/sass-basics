@@ -370,7 +370,7 @@ body, p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. What are Sass, Less, and Stylus? Why do people use them? How does something like Compass relate to Sass?
+## Q. What are Sass, Less, and Stylus?
 
 They are CSS preprocessors. They are an abstraction layer on top of CSS. They are a special syntax/language that compile down into CSS. They make managing CSS easier, with things like variables and mixins to handle vendor prefixes (among other things). They make doing best practices easier, like concatenating and compressing CSS.
 
@@ -493,9 +493,49 @@ Here, the value of the **$name** variable is added wherever we used **#{$name}**
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. What is the difference between SCSS and Sass?
-#### Q. What are the advantages/disadvantages of using CSS preprocessors?
-#### Q. Explain what is the use of the @import function in Sass?
+## Q. What is the use of the @import function in Sass?
+
+The SASS **@import** function helps us to import multiple SASS or CSS stylesheets together such that they can be used together. Importing a SASS file using the @import rule allows access to mixins, variables, and functions to the other file in which the other file is imported.
+
+**Example:**
+
+```scss
+/**
+ * common/_button.scss
+ */
+button {
+  padding: .25em;
+  line-height: 0;
+}
+```
+
+```scss
+/**
+ * common/_lists.scss
+ */
+ul, ol {
+  text-align: left;
+
+  & & {
+    padding: {
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+```
+
+```scss
+/**
+ * style.scss
+ */
+@import 'common/button', 'common/lists';
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. Explain what is the use of Mixin function in Sass? What is the meaning of DRY-ing out a mixin?
 #### Q. Explain what Sass Maps is and what is the use of Sass Maps?
 #### Q. Explain how Sass comments are different from regular CSS?

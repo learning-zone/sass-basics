@@ -428,7 +428,7 @@ The **@content** directive allows us to pass a content block into a mixin.
 
 **Example:**
 
-**SCSS:**
+**SCSS Style:**
 
 ```scss
 /**
@@ -445,7 +445,7 @@ The **@content** directive allows us to pass a content block into a mixin.
 }
 ```
 
-**CSS Output:**
+**CSS Style:**
 
 ```css
 @media only screen and (max-width: 320px) {

@@ -426,8 +426,6 @@ body {
 
 The **@content** directive allows us to pass a content block into a mixin.
 
-**Example:**
-
 **SCSS Style:**
 
 ```scss

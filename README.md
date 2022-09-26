@@ -695,7 +695,59 @@ card {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. What are number operations in Sass?
+## Q. What are number operations in Sass?
+
+SASS allows for mathematical operations such as addition, subtraction, multiplication and division. They automatically convert between compatible units.
+
+**SCSS Style:**
+
+```scss
+/**
+ * style.scss
+ */
+$size: 25px;
+
+h2 {
+   font-size: $size + 5;
+}
+
+h3 {
+   font-size: $size / 5;
+}
+
+.para1 {
+   font-size: $size * 1.5;
+}
+
+.para2 {
+   font-size: $size - 10;
+}
+```
+
+**CSS Style:**
+
+```css
+h2 {
+   font-size: 30px;
+}
+
+h3 {
+   font-size: 5px;
+}
+
+.para1 {
+   font-size: 37.5px;
+}
+
+.para2 {
+  font-size: 15px;
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. Explain @if, @else, @for, @include, @at-root, @extend, @error, @debug directives?
 #### Q. Which directive displays an error message in SASS?
 #### Q. How many output styles are there in sass?

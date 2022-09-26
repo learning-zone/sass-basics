@@ -536,7 +536,40 @@ ul, ol {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. Explain what is the use of Mixin function in Sass? What is the meaning of DRY-ing out a mixin?
+## Q. What is the meaning of DRY-ing out a mixin?
+
+**DRY-ing** out a mixin means splitting it into **static** and **dynamic** parts. The dynamic mixin is the one the user is going to call, and the static mixin is only going to contain the pieces that would otherwise get duplicated.
+
+**Example:**
+
+```scss
+@mixin button($color) {
+		@include button-static;
+
+	background-color: $color;
+	border-color: mix(black, $color, 25%);
+  
+	&:hover {
+		background-color: mix(black, $color, 15%);
+		border-color: mix(black, $color, 40%);
+	}
+}
+
+@mixin button-static {
+	border: 1px solid;
+	border-radius: 5px;
+	padding: .25em .5em;
+	
+	&:hover {
+		cursor: pointer;
+	}
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. Explain what Sass Maps is and what is the use of Sass Maps?
 #### Q. Explain how Sass comments are different from regular CSS?
 #### Q. Does Sass support inline comments?

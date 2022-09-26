@@ -422,7 +422,41 @@ body {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. What is the @content directive used for?
+## Q. What is the @content directive used for?
+
+The **@content** directive allows us to pass a content block into a mixin.
+
+**Example:**
+
+**SCSS:**
+
+```scss
+/**
+ * @content directive
+ */
+@mixin media($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@include media(320px) {
+  background: red;
+}
+```
+
+**CSS Output:**
+
+```css
+@media only screen and (max-width: 320px) {
+  background: red;
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. What is wrong with Sass nesting? 
 #### Q. What is variable interpolation in Sass?
 #### Q. What is the difference between SCSS and Sass?

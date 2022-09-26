@@ -570,7 +570,26 @@ ul, ol {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. Explain what Sass Maps is and what is the use of Sass Maps?
+## Q. What is the use of Sass Maps functions?
+
+SASS provides the data type called map which represents one or more pairs of key values. The map, which returns a map, provides a new map and does not modify the initial map.
+
+**Example:**
+
+```scss
+/**
+ * map.get()
+ */
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+
+@debug map.get($font-weights, "medium"); // 500
+@debug map.get($font-weights, "extra-bold"); // null
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. Explain how Sass comments are different from regular CSS?
 #### Q. Does Sass support inline comments?
 #### Q. Explain when can you use the %placeholders in Sass?

@@ -656,12 +656,45 @@ Placeholder is special kind of selector which is used for writing own SASS libra
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. Is it possible to nest variables within variables in Sass?
-#### Q. What are Sass cons and pros?
-#### Q. Explain how Mixins is useful?
-#### Q. What are the similarities between LESS and Sass?
-#### Q. Explain what is the use of &combinator ?
-#### Q. What is the way to write a placeholder selector in Sass?
+## Q. What is the use of &combinator?
+
+A combinator is something that explains the relationship between the selectors. A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+
+There are four different combinators in CSS:
+
+* Descendant selector (space)
+* Child selector (>)
+* Adjacent sibling selector (+)
+* General sibling selector (~)
+
+**Example 01:** Without the combined child selector
+
+```scss
+card {
+  outer {
+    inner {
+    	color: red;
+    }
+  }
+}
+```
+
+**Example 02:** Using **>** selector
+
+```scss
+card {
+ > outer {
+   > inner {
+     color: red;
+   }
+ }
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. What are number operations in Sass?
 #### Q. Explain @if, @else, @for, @include, @at-root, @extend, @error, @debug directives?
 #### Q. Which directive displays an error message in SASS?

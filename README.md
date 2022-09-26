@@ -386,6 +386,42 @@ File splitting helps organize your CSS into multiple files, decreasing page load
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+## Q. What is Sass Partials?
+
+By default, Sass transpiles all the **.scss** files directly. However, when you want to import a file, you do not need the file to be transpiled directly. If you start the filename with an underscore, Sass will not transpile it. Files named this way are called partials in Sass.
+
+**Example:**
+
+The following example shows a partial Sass file named "_colors.scss".
+
+```css
+/**
+ * "_colors.scss
+ */
+$myPink: #EE82EE;
+$myBlue: #4169E1;
+$myGreen: #8FBC8F;
+```
+
+Now, if you import the partial file, omit the underscore. Sass understands that it should import the file "_colors.scss":
+
+```css
+/**
+ * Sass Partials
+ */
+@import "colors";
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: $myBlue;
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. What is the @content directive used for?
 #### Q. What is wrong with Sass nesting? 
 #### Q. What is variable interpolation in Sass?

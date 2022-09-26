@@ -590,9 +590,72 @@ $font-weights: ("regular": 400, "medium": 500, "bold": 700);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. Explain how Sass comments are different from regular CSS?
-#### Q. Does Sass support inline comments?
-#### Q. Explain when can you use the %placeholders in Sass?
+## Q. When can you use the %placeholders in Sass?
+
+Placeholder is special kind of selector which is used for writing own SASS library. Its work is very similar to mixin without arguments. Placeholder selector starts with a **%** sign. Placeholder selectors are excluded in the compilation of the SASS file
+
+**Syntax:**
+
+```scss
+@extend %( name_of_selector );
+```
+
+**SCSS Style:**
+
+```scss
+%button-format {
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: black;
+}
+
+.toolbar-button {
+    @extend %button-format;
+    background-color: lightpink;
+
+    &:hover {
+        background-color: rgb(155, 106, 114);
+    }
+}
+
+.status-bar-button {
+    @extend %button-format;
+    background-color: lightblue;
+
+    &:hover {
+        background-color: blue;
+    }
+}
+```
+
+**CSS Style:**
+
+```css
+.status-bar-button, .toolbar-button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: black;
+}
+
+.toolbar-button {
+  background-color: lightpink;
+}
+.toolbar-button:hover {
+  background-color: #9b6a72;
+}
+
+.status-bar-button {
+  background-color: lightblue;
+}
+.status-bar-button:hover {
+  background-color: blue;
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. Is it possible to nest variables within variables in Sass?
 #### Q. What are Sass cons and pros?
 #### Q. Explain how Mixins is useful?

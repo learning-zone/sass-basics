@@ -748,7 +748,147 @@ h3 {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. Explain @if, @else, @for, @include, @at-root, @extend, @error, @debug directives?
+## Q. Explain @if, @else directives?
+
+The Sass **@if** directive and its companions @else if and @else, allow you to include Sass code in the CSS output only if certain conditions are met.
+
+**Example 01:** if Condition
+
+```scss
+$test: 10;
+
+p {
+   @if $test < 5 { 
+       color: blue;  
+    }
+}
+```
+
+**Example 02:** Nested if Conditions
+
+```scss
+$test: 10;
+
+p {
+   @if $test < 10 { 
+       color: blue;
+       @if $test == 5 {
+          text-color: white;
+        }
+    }
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. Explain @for, @while directives?
+
+The **@while** directive will continue to output CSS produced by the statements while the condition returns true.
+
+**SCSS Style:**
+
+```scss
+$p: 3;
+
+@while $p < 5 {
+  .item-#{$p} {
+        color: red;
+        $p : $p + 1;
+    }
+}
+```
+
+**CSS Style:**
+
+```css
+.item-3 {
+  color: red; 
+}
+
+.item-4 {
+  color: red; 
+}
+```
+
+The @for directive to execute a group of statement a specific number of times. It has two variations. The first, which uses the through keyword, executes the statements from `<start>` to `<end>`, inclusive:
+
+**SCSS Style:**
+
+```scss
+@for $i from 1 through 3 {
+   .list-#{$i} {
+      width: 2px * $i;
+   }
+}
+```
+
+**CSS Style:**
+
+```css
+.list-1 {
+  margin-left: 2px; 
+}
+
+.list-2 {
+  margin-left: 4px; 
+}
+
+.list-3 {
+  margin-left: 6px; 
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. Explain @at-root, @extend directives?
+
+The @at-root directive is a collection of nested rules which is able to make the style block at root of the document.
+@at-root selector excludes the selector by default. By using @at-root, we can move the style outside of nested directive.
+
+**Syntax:**
+
+```scss
+@at-root (without: ...) and @at-root (with: ...)
+```
+
+**SCSS Style:**
+
+```scss
+@media print {
+   .style {
+      height: 8px;
+      @at-root (without: media) {
+         color: #808000;;
+      }
+   }
+}
+```
+
+**CSS Style:**
+
+The above code will be compiled to the CSS file as shown below −
+
+```css
+@media print {
+   .style {
+      height: 8px;
+   }
+}
+
+.style {
+   color: #808000;
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+#### Q. Explain @error, @debug directives?
 #### Q. Which directive displays an error message in SASS?
 #### Q. How many output styles are there in sass?
 #### Q. Which symbol is used to refer parent selector in sass?

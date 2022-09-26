@@ -455,8 +455,44 @@ The **@content** directive allows us to pass a content block into a mixin.
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. What is wrong with Sass nesting? 
-#### Q. What is variable interpolation in Sass?
+## Q. What is variable interpolation in Sass?
+
+Interpolation allows us to interpolate sass expressions into a simple SASS or CSS code. Means, you can define selector name, property name, CSS at-rules, quoted or unquoted strings etc, as a variable.
+
+**Syntax:**
+
+```scss
+#{$variable_name}
+```
+
+**SCSS Style:**
+
+```scss
+@mixin corner-icon($name) {
+  /* using interpolation */
+  .icon-#{$name} {
+    background-image: url("/icons/#{$name}.svg");
+  }
+}
+
+/* calling the above mixin */
+@include corner-icon("mail");
+```
+
+**CSS Style:**
+
+```css
+.icon-mail {
+  background-image: url("/icons/mail.svg");
+}
+```
+
+Here, the value of the **$name** variable is added wherever we used **#{$name}** in our stylesheet.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. What is the difference between SCSS and Sass?
 #### Q. What are the advantages/disadvantages of using CSS preprocessors?
 #### Q. Explain what is the use of the @import function in Sass?

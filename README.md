@@ -940,7 +940,7 @@ $font-sizes: 10px + 20px;
 
 By default, Sass outputs the CSS in a nested style, which is a style that reflects the document structure. Sass allows to choose between four styles: nested, expanded, compact, and compressed.
 
-**1. :nested:**
+**:nested**
 
 Nested style is the default Sass style because it reflects the structure of the CSS styles in which each property has its own line, but the indentation is based on how deeply it\'s nested.
 
@@ -963,7 +963,7 @@ article {
     margin-bottom: 12px; }
 ```
 
-**2. :expanded:**
+**:expanded**
 
 In expanded style properties are indented within the rules, but the rules aren\'t indendented in any special way like in :nested output style.
 
@@ -989,7 +989,7 @@ article p {
 }
 ```
 
-**3. :compact:**
+**:compact**
 
 In compact style each rule takes up only one line with every property defined on that line. It takes up less space than :nested and :expanded.
 
@@ -1004,7 +1004,7 @@ article { background-color: #00ff00; color: red; border: 1px solid blue; }
 article p { font-size: 18px; font-style: italic; margin-bottom: 12px; }
 ```
 
-**4. :compressed:**
+**:compressed**
 
 Compressed styles takes up the minimum amount of space possible. There is no whitespace except space that is necessary to separate selectors and the newline on the end of the document. 
 

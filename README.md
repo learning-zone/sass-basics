@@ -1020,8 +1020,154 @@ main{padding:12px 24px;margin-bottom:24px}article{background-color:#00ff00;color
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. Which symbol is used to refer parent selector in sass?
-#### Q. List out the data types that Sass supports?
+## Q. Which symbol is used to refer parent selector in sass?
+
+The sass avoids the rewrite code using the nesting method. To refer the parent selector and inside of parent selector **&** symbol is required. This symbol used for hover, focus and active status in style tag.
+
+```scss
+.alert {
+  // The parent selector can be used to add pseudo-classes to the outer
+  // selector.
+  &:hover {
+    font-weight: bold;
+  }
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. List out the data types that Sass supports?
+
+Sass includes seven different data types: numbers, strings, colors, Booleans, null, lists and maps.
+
+**1. Number:**
+
+```scss
+p {
+   font-size: 3em * 1.5;
+}
+```
+
+**2. Strings:**
+
+```scss
+$default-font: 'Lucida';
+
+p {
+    font-family: $default-font, "Ariel", sans-serif;
+}
+```
+
+**3. Colors:**
+
+```scss
+// RGB (Red, Green, Blue):
+$primary: rgb(214,121,45);
+
+// RGBA (Red, Green, Blue, Alpha):
+$color: rgba(210, 122, 54, 0.5)
+
+// HSL ( Hue, Saturation, Lightness):
+$color: hsl(0, 0%, 100%);
+
+// HSLA (Hue, Saturation, Lightness, Alpha):
+$color: hsla(100, 60%, 60%, 0.7)
+```
+
+**4. Booleans:**
+
+```scss
+// and
+@debug true and true; // Returns true value
+
+// or
+@debug true or false; // Returns true value
+@debug false or false; // Returns false value
+
+// not
+@debug not true; // Returns false value
+@debug not false; // Returns true value
+```
+
+**5. null:**
+
+```scss
+$primary-color: null;
+```
+
+**6. lists:**
+
+```scss
+// Separated by commas.
+$number-list: 10, 23, 10; 
+
+// Separated by spaces.
+$number-list2: 10px 20px 30px; 
+
+// Nested list.
+$number-list3: 10, 20 30, 10; 
+
+// Nested list same as $number-list3.
+$number-list4: 10, (20 30), 10; 
+```
+
+**7. maps:**
+
+Map functions
+
+* map-get(map, key)
+* map-merge(map1, map2)
+* map-keys(map)
+* map-has-key(map, key)
+* map-remove(map, keys...)
+* map-values(map)
+
+**Example 01:** map-get(map, key)
+
+```scss
+$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)
+map-get($font-sizes, "small") // 12px
+```
+
+**Example 02:** map-has-key(map, key)
+
+```scss
+$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)
+map-has-key($font-sizes, "big") // false
+```
+
+**Example 03:** map-keys(map)
+
+```scss
+$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)
+map-keys($font-sizes) // "small", "normal, "large"
+```
+
+**Example 04:** map-merge(map1, map2)
+
+```scss
+$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)
+$font-sizes2: ("x-large": 30px, "xx-large": 36px)
+
+map-merge($font-sizes, $font-sizes2) 
+
+// "small": 12px, "normal": 18px, "large": 24px, "x-large": 30px, "xx-large": 36px
+```
+
+**Example 05:** map-remove(map, keys...)
+
+```scss
+$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)
+map-remove($font-sizes, "small") // ("normal": 18px, "large": 24px)
+```
+
+**Example 06:** map-values(map)
+
+```scss
+$font-sizes: ("small": 12px, "normal": 18px, "large": 24px)
+map-values($font-sizes) // 12px, 18px, 24px
+```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>

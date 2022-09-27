@@ -888,7 +888,54 @@ The above code will be compiled to the CSS file as shown below −
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. Explain @error, @debug directives?
+## Q. Explain @error, @debug directives?
+
+**1. The @error Directive:**
+
+It prints the value of the expression along with a stack trace indicating how the current mixin or function was called. Once the error is printed, Sass stops compiling the stylesheet and tells whatever system is running it that an error occurred.
+
+```scss
+@function color-variation($color) {
+  @if map-has-key($colors, $color) {
+    @return map-get($colors, $color);
+  }
+  
+  @error "Invalid color name: `#{$color}`.";
+}
+```
+
+**Output:**
+
+```css
+>> Invalid color name: `brand-orange`.
+>>   Line 9  Column 7  sass/common.scss
+```
+
+**2. The @debug Directive:**
+
+It prints the value of that expression, along with the filename and line number.
+
+```scss
+$color-green: #00FF00;
+$font-sizes: 10px + 20px;
+
+.container {
+  @debug $color-green;
+  @debug $font-sizes;
+}
+```
+
+**Output:**
+
+```css
+>> common.scss:10: DEBUG: #00FF00
+>> common.scss:11: DEBUG: 30px
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. Which directive displays an error message in SASS?
 #### Q. How many output styles are there in sass?
 #### Q. Which symbol is used to refer parent selector in sass?

@@ -834,8 +834,6 @@ $number-list4: 10, (20 30), 10;
 
 ## Q. How to use map() in Sass?
 
-**7. maps:**
-
 Map functions
 
 * map-get(map, key)

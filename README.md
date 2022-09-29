@@ -42,7 +42,7 @@ Sass works by writing your styles in .scss (or .sass) files, which will then get
 **&#9885; [Try this example on CodeSandbox](https://codepen.io/learning-zone/pen/RwVprvO)**
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## Q. List out the differences between LESS and Sass?
@@ -55,7 +55,7 @@ Sass works by writing your styles in .scss (or .sass) files, which will then get
 |LESS does not work with "unknown" units neither it returns syntax error notification for incompatible units or maths related syntax error|	Sass allows you to work with "unknown" units also returns a syntax error notification for incompatible units|
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## Q. Why Sass is considered better than LESS?
@@ -68,7 +68,7 @@ Sass works by writing your styles in .scss (or .sass) files, which will then get
 * In Sass, you can write your own handy functions
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## Q. What are Sass, Less, and Stylus?
@@ -76,7 +76,7 @@ Sass works by writing your styles in .scss (or .sass) files, which will then get
 They are CSS preprocessors. They are an abstraction layer on top of CSS. They are a special syntax/language that compile down into CSS. They make managing CSS easier, with things like variables and mixins to handle vendor prefixes (among other things). They make doing best practices easier, like concatenating and compressing CSS.
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## Q. What is file splitting and why should you use it?
@@ -84,7 +84,7 @@ They are CSS preprocessors. They are an abstraction layer on top of CSS. They ar
 File splitting helps organize your CSS into multiple files, decreasing page load time and making things easier to manage. How you decide to split them up is up to you, but it can be useful to separate files by component. For example, we can have all button styles in a file called `_buttons.scss` or all your header-specific styles in a file called `_header.scss`, main file, say _app.scss, and we can import those files by writing @import 'buttons';
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## # 2. SASS VARIABLES
@@ -121,7 +121,7 @@ When the Sass is processed, it takes the variables we define for the `$font-stac
 **&#9885; [Try this example on CodeSandbox](https://codepen.io/learning-zone/pen/LYyWNGM)**
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+  <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## Q. What is variable interpolation in Sass?
@@ -159,7 +159,7 @@ Interpolation allows us to interpolate sass expressions into a simple Sass or CS
 Here, the value of the **$name** variable is added wherever we used **#{$name}** in our stylesheet.
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+  <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## # 3. SASS NESTING
@@ -211,7 +211,7 @@ nav a {
 **&#9885; [Try this example on CodeSandbox](https://codepen.io/learning-zone/pen/qBmrZmv)**
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+  <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## # 4. SASS PARTIALS
@@ -251,7 +251,7 @@ body {
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## # 5. SASS @IMPORT
@@ -298,7 +298,7 @@ ul, ol {
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## # 6. SASS @MIXIN
@@ -323,7 +323,7 @@ A mixin lets you make groups of CSS declarations that you want to reuse througho
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## Q. What is the meaning of DRY-ing out a mixin?
@@ -357,7 +357,7 @@ A mixin lets you make groups of CSS declarations that you want to reuse througho
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## # 7. SASS @EXTEND
@@ -387,7 +387,7 @@ A mixin lets you make groups of CSS declarations that you want to reuse througho
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## # Q. How Sass support Inheritance?
@@ -456,7 +456,7 @@ Using `@extend` lets you share a set of CSS properties from one selector to anot
 **&#9885; [Try this example on CodeSandbox](https://codepen.io/learning-zone/pen/ExmWKLG)**
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## # 8. SASS DIRECTIVES
@@ -495,7 +495,7 @@ p {
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## Q. Explain @for, @while directives?
@@ -556,7 +556,7 @@ The @for directive to execute a group of statement a specific number of times. I
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## Q. Explain @at-root, @extend directives?
@@ -600,7 +600,7 @@ The above code will be compiled to the CSS file as shown below −
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## Q. Explain @error, @debug directives?
@@ -648,7 +648,7 @@ $font-sizes: 10px + 20px;
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## Q. What is the @content directive used for?
@@ -681,7 +681,7 @@ The **@content** directive allows us to pass a content block into a mixin.
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## # 9. SASS FUNCTIONS
@@ -714,7 +714,7 @@ body, p {
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## # 10. SASS STRING
@@ -732,7 +732,7 @@ p {
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## # 11. SASS NUMERIC
@@ -748,7 +748,7 @@ p {
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## Q. What are number operations in SASS?
@@ -801,7 +801,7 @@ h3 {
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## # 12. SASS LIST
@@ -825,7 +825,7 @@ $number-list4: 10, (20 30), 10;
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## # 13. SASS MAP
@@ -892,7 +892,7 @@ map-values($font-sizes) // 12px, 18px, 24px
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## Q. What is the use of Sass Maps functions?
@@ -912,7 +912,7 @@ $font-weights: ("regular": 400, "medium": 500, "bold": 700);
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## # 14. SASS SELECTOR
@@ -982,7 +982,7 @@ Placeholder is special kind of selector which is used for writing own Sass libra
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## Q. What is the use of &combinator?
@@ -1021,7 +1021,7 @@ card {
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## Q. Which symbol is used to refer parent selector in Sass?
@@ -1038,7 +1038,7 @@ The sass avoids the rewrite code using the nesting method. To refer the parent s
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## # 15. SASS COLOR
@@ -1062,7 +1062,7 @@ $color: hsla(100, 60%, 60%, 0.7)
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
 
 ## # 16. SASS MISCELLANEOUS
@@ -1150,5 +1150,5 @@ main{padding:12px 24px;margin-bottom:24px}article{background-color:#00ff00;color
 ```
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
